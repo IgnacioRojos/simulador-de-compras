@@ -1,0 +1,12 @@
+[
+  { "img": "/img/punto.jpg", "titulo": "Fiat Uno", "marca": "Fiat", "id": 1 },
+  { "img": "/img/vento.jpg", "titulo": "Volkswagen Vento", "marca": "Volkswagen", "id": 2 },
+  { "img": "/img/bora.jpg", "titulo": "Volkswagen Bora", "marca": "Volkswagen", "id": 3 },
+  { "img": "/img/corsa.jpg", "titulo": "Chevrolet Corsa", "marca": "Chevrolet", "id": 4 },
+  { "img": "/img/fiesta.jpg", "titulo": "Ford Fiesta", "marca": "Ford", "id": 5 },
+  { "img": "/img/up.jpg", "titulo": "Volkswagen Up", "marca": "Volkswagen", "id": 6 },
+  { "img": "/img/ka.jpg", "titulo": "Ford Ka", "marca": "Ford", "id": 7 },
+  { "img": "/img/siena.jpg", "titulo": "Fiat Siena", "marca": "Fiat", "id": 8 },
+  { "img": "/img/yaris.jpg", "titulo": "Toyota Yaris", "marca": "Toyota", "id": 9 },
+  { "img": "/img/jeep.jpg", "titulo": "Jeep Renegade", "marca": "Jeep", "id": 10 }
+]
