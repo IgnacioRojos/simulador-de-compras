@@ -1,23 +1,24 @@
 import { useCart } from "../Context/CartContext";
+import "./cart.css";
 
 const Cart = () => {
   const { cart, removeFromCart, clearCart } = useCart();
 
   return (
-    <div className="container mt-4">
-      <h2>Carrito</h2>
+    <div className="cart-container">
+      <h2 className="cart-title">Carrito</h2>
 
       {cart.length === 0 ? (
-        <p>El carrito está vacío</p>
+        <p className="cart-empty">El carrito está vacío</p>
       ) : (
         <>
           {cart.map((item) => (
-            <div key={item.id} className="d-flex justify-content-between p-2 border">
+            <div key={item.id} className="cart-item">
               <span>
                 {item.titulo} — Cantidad: {item.cantidad}
               </span>
               <button
-                className="btn btn-danger btn-sm"
+                className="cart-btn-remove"
                 onClick={() => removeFromCart(item.id)}
               >
                 Eliminar
@@ -25,7 +26,7 @@ const Cart = () => {
             </div>
           ))}
 
-          <button className="btn btn-warning mt-3" onClick={clearCart}>
+          <button className="cart-btn-clear" onClick={clearCart}>
             Vaciar carrito
           </button>
         </>

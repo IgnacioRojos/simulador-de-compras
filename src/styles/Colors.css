@@ -1,0 +1,21 @@
+:root {
+  /* ----- Colores Principales (Corporate / Premium) ----- */
+  --color-blue-dark: #0A2A43;        /* Azul Marino */
+  --color-blue-steel: #154B74;       /* Azul Acero */
+  --color-blue-light: #3A7BA8;       /* Azul Técnico Claro */
+
+  /* ----- Metálicos y Neutros (Automotive) ----- */
+  --color-graphite: #2A2E33;         /* Gris Grafito */
+  --color-titanium: #50565C;         /* Gris Titanio */
+  --color-silver: #C7CCD1;           /* Plata Metalizado */
+  --color-pearl-white: #F5F6F7;      /* Blanco Perlado */
+
+  /* ----- Acentos (CTA, precios, acciones) ----- */
+  --color-red-sport: #C62828;        /* Rojo Deportivo */
+  --color-red-action: #E53935;       /* Rojo Acción / CTA */
+  --color-gold-premium: #D4A759;     /* Dorado Premium */
+
+  /* ----- Sombras ----- */
+  --shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.12);
+  --shadow-strong: 0 4px 16px rgba(0, 0, 0, 0.2);
+}

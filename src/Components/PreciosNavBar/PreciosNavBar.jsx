@@ -1,5 +1,6 @@
 import { useState } from "react";
 import precios from "../../data/dataPrecios.json";
+import "./preciosNavBar.css"
 
 const PrecioNavbar = () => {
   const [marca, setMarca] = useState("");
@@ -20,15 +21,13 @@ const PrecioNavbar = () => {
     }
   };
 
-  const cerrarAlert = () => setMensaje("");
-
   return (
-    <div className="p-3 bg-light border mb-4">
+    <div className="precio-container">
 
-      {/* Selector */}
-      <div className="d-flex gap-3 align-items-center">
-        <select 
-          className="form-select w-auto"
+      {/* Selector + Botón */}
+      <div className="flex flex-col gap-4">
+        <select
+          className="precio-select"
           value={marca}
           onChange={(e) => setMarca(e.target.value)}
         >
@@ -39,16 +38,19 @@ const PrecioNavbar = () => {
           <option value="Renault">Renault</option>
         </select>
 
-        <button className="btn btn-primary" onClick={calcularPrecio}>
+        <button className="precio-btn" onClick={calcularPrecio}>
           Calcular precio
         </button>
       </div>
 
-      {/* Alert */}
+      {/* Alerta */}
       {mensaje && (
-        <div className="alert alert-primary mt-3">
-          <h4>{mensaje}</h4>
-          <button className="btn btn-danger mt-2" onClick={cerrarAlert}>
+        <div className="precio-alert">
+          <h4 className="font-semibold">{mensaje}</h4>
+          <button
+            className="precio-alert-btn"
+            onClick={() => setMensaje("")}
+          >
             Aceptar
           </button>
         </div>

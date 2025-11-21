@@ -1,6 +1,7 @@
 import Autos from "../../data/data.json";
 import Item from "../Item/Item";
 import { useState } from "react";
+import "./itemListContainer.css"
 
 const ItemListContainer = ({ filtro }) => {
   const [autos] = useState(Autos);
@@ -9,7 +10,7 @@ const ItemListContainer = ({ filtro }) => {
     filtro === "Todos" ? autos : autos.filter(auto => auto.marca === filtro);
 
   return (
-    <div className="d-flex flex-wrap gap-4 mt-4">
+    <div className=" itemlist-container grid grid-cols-4 gap-4">
       {autosFiltrados.map((auto) => (
         <Item key={auto.id} auto={auto} />
       ))}

@@ -1,4 +1,5 @@
 import Swal from "sweetalert2";
+import "./calcularsSeguro.css"
 
 const SeguroCalculator = () => {
 
@@ -33,7 +34,7 @@ const SeguroCalculator = () => {
   };
 
   return (
-    <button className="btn btn-success" onClick={calcularSeguro}>
+    <button className="seguro-btn" onClick={calcularSeguro}>
       Calcular Seguro
     </button>
   );

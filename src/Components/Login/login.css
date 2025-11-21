@@ -1,0 +1,71 @@
+/* ===== Card Login ===== */
+.container {
+  background: var(--color-pearl-white);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow-strong);
+  animation: fadeIn 0.6s ease-in-out;
+  border-top: 3px solid var(--color-gold-premium); /* detalle premium */
+  border-bottom: 3px solid var(--color-gold-premium);
+}
+
+/* ===== Título ===== */
+h3 {
+  color: var(--color-blue-dark);
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ===== Inputs ===== */
+.form-control {
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid var(--color-silver);
+  background: #fff;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--color-blue-light);
+  box-shadow: 0 0 6px var(--color-blue-light);
+}
+
+/* ===== Botón ===== */
+.btn-primary {
+  background-color: var(--color-red-sport) !important;
+  border: none !important;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s ease;
+  box-shadow: var(--shadow-soft);
+  width: 50%;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-red-action) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+/* ===== Error ===== */
+.alert-danger {
+  border-radius: 12px;
+  background: rgba(198, 40, 40, 0.15);
+  color: var(--color-red-sport);
+  border: 1px solid rgba(198, 40, 40, 0.35);
+}
+
+/* ===== Animación ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+  }
+}

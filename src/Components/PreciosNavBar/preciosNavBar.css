@@ -1,0 +1,74 @@
+/* =============================== */
+/*   PrecioNavbar – Estética Auto  */
+/* =============================== */
+
+.precio-container {
+  background-color: var(--color-pearl-white);
+  border: 1px solid var(--color-silver);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Select */
+.precio-select {
+  background-color: white;
+  border: 1px solid var(--color-silver);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+}
+
+.precio-select:focus {
+  border-color: var(--color-blue-steel);
+  outline: none;
+  box-shadow: var(--shadow-strong);
+}
+
+/* Botón */
+.precio-btn {
+  background-color: var(--color-blue-light);
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.25s ease, transform 0.2s;
+}
+
+.precio-btn:hover {
+  background-color: var(--color-blue-steel);
+  transform: translateY(-2px);
+}
+
+/* Alerta */
+.precio-alert {
+  background-color: var(--color-blue-light);
+  color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-strong);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Botón alerta */
+.precio-alert-btn {
+  margin-top: 0.5rem;
+  background-color: var(--color-red-action);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.25s;
+}
+
+.precio-alert-btn:hover {
+  background-color: var(--color-red-sport);
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

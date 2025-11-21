@@ -1,0 +1,80 @@
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.km-container {
+  background-color: var(--color-pearl-white);
+  border: 1px solid var(--color-silver);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  max-width: 350px;
+}
+
+/* ===== TÍTULO ===== */
+.km-title {
+  color: var(--color-blue-dark);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+/* ===== SELECT ===== */
+.km-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-silver);
+  border-radius: 8px;
+  background-color: white;
+  color: var(--color-graphite);
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.km-select:hover,
+.km-select:focus {
+  border-color: var(--color-blue-light);
+  box-shadow: var(--shadow-soft);
+}
+
+/* ===== BOTÓN CALCULAR ===== */
+.km-btn {
+  background-color: var(--color-blue-light);
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.25s ease;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.km-btn:hover {
+  background-color: var(--color-blue-steel);
+  box-shadow: var(--shadow-strong);
+  transform: translateY(-2px);
+}
+
+/* ===== SWEETALERT PERSONALIZADO ===== */
+.swal2-popup {
+  border-radius: 14px !important;
+  background-color: var(--color-pearl-white) !important;
+  color: var(--color-blue-dark) !important;
+  border: 1px solid var(--color-silver) !important;
+}
+
+.swal2-title {
+  color: var(--color-blue-dark) !important;
+  font-weight: 700 !important;
+}
+
+.swal2-confirm {
+  background-color: var(--color-blue-light) !important;
+  color: white !important;
+  border-radius: 8px !important;
+  padding: 0.6rem 1.2rem !important;
+  font-weight: 600 !important;
+}
+
+.swal2-confirm:hover {
+  background-color: var(--color-blue-steel) !important;
+}

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
+import "./calcularKilometros.css";
+
 
 const rendimientos = {
   Fiat: 9.5,
@@ -34,11 +36,11 @@ const KilometrosCalculator = () => {
   };
 
   return (
-    <div className="p-3 bg-light border rounded mt-4">
-      <h5>Calcular Kilómetros del Auto</h5>
+    <div className="km-container mt-4">
+      <h5 className="km-title">Calcular Kilómetros del Auto</h5>
 
       <select
-        className="form-select w-auto my-2"
+        className="km-select my-2"
         value={marca}
         onChange={(e) => setMarca(e.target.value)}
       >
@@ -49,7 +51,7 @@ const KilometrosCalculator = () => {
         <option value="Chevrolet">Chevrolet</option>
       </select>
 
-      <button className="btn btn-info" onClick={calcular}>
+      <button className="km-btn" onClick={calcular}>
         Calcular Kilómetros
       </button>
     </div>

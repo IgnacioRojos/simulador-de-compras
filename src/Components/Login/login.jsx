@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./login.css";
 
 
 const Login = () => {
@@ -14,7 +15,7 @@ const Login = () => {
 
     if (usuario === "ignacio" && contraseña === "1234") {
       localStorage.setItem("usuario", JSON.stringify(user));
-      window.location.href = "/Dashboard"; // Ruta en React Router
+      window.location.href = "/Dashboard"; 
     } else {
       setError("Datos erróneos al iniciar sesión");
       setTimeout(() => setError(""), 1500);
