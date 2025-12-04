@@ -1,6 +1,6 @@
 /* ===== BOTÓN PRINCIPAL ===== */
 .seguro-btn {
-  background-color: var(--color-red-action);
+  background-color: var(--color-blue-light);
   color: white;
   font-weight: 600;
   padding: 0.6rem 1.2rem;
@@ -14,7 +14,7 @@
 }
 
 .seguro-btn:hover {
-  background-color: var(--color-red-sport);
+  background-color: var(--color-blue-light);
   transform: translateY(-2px);
   box-shadow: var(--shadow-strong);
 }

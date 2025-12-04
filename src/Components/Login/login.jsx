@@ -24,7 +24,8 @@ const Login = () => {
 
   return (
     <div className="container mt-5" style={{ maxWidth: "400px" }}>
-      <h3 className="text-center mb-4">Inicio de Sesión</h3>
+      <h3 className="text-center mb-4">Bienvenido a concesionario Sport <br/>
+        Inicia de Sesión</h3>
 
       <input
         type="text"

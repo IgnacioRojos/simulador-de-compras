@@ -73,7 +73,7 @@
 /* Botón vaciar */
 .cart-btn-clear {
   margin-top: 1rem;
-  background-color: var(--color-red-sport);
+  background-color: var(--color-blue-light);
   color: white;
   padding: 0.7rem 1rem;
   font-weight: 700;
@@ -85,7 +85,7 @@
 }
 
 .cart-btn-clear:hover {
-  background-color: var(--color-red-sport);
+  background-color: var(--color-blue-light);
   color: white;
   transform: translateY(-2px);
 }

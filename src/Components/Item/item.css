@@ -35,7 +35,7 @@
 /* Botón */
 .item-btn {
   width: 100%;
-  background-color: var(--color-red-action);
+  background-color: var(--color-blue-light);
   color: white;
   border-radius: 8px;
   padding: 0.6rem;
@@ -45,5 +45,5 @@
 }
 
 .item-btn:hover {
-  background-color: var(--color-red-sport);
+  background-color: var(--color-blue-light);
 }
